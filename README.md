@@ -2,7 +2,7 @@
 
 Welcome to my React learning repository! 🌱
 
-This repository is a collection of various projects, experiments, and exercises that I have built while learning React. It serves as a log of my progress as I explore different concepts and techniques in React development.
+This repository is a collection of various projects, experiments, and exercises that I have/will be developing while learning React. It serves as a log of my progress as I explore different concepts and techniques in React development.
 
 ## About
 
