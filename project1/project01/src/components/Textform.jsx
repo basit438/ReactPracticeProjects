@@ -16,7 +16,14 @@ function Textform() {
   let handleOnChange = (e) => {
     setText(e.target.value);
   }
-
+  const speak = () => {
+    let msg = new SpeechSynthesisUtterance();
+    msg.text = text;
+    window.speechSynthesis.speak(msg);
+  }
+  const clear =()=>{
+    setText("")
+  }
   return (
     <>
       <div className="flex flex-col mt-4 h-80 bg-gray-100 items-center p-4">
@@ -30,27 +37,30 @@ function Textform() {
         <div className="flex mt-4 space-x-4">
           <button
             onClick={toUpper}
-            className='px-4 py-2 border h-10 bg-green-500 rounded-lg text-white hover:bg-green-600 active:bg-green-700'
+            className='px-4 py-2 border h-10 bg-green-500 rounded-lg text-white hover:bg-violet-600 active:bg-green-700'
           >
             To UPPERCASE
           </button>
           <button
             onClick={toLower}
-            className='px-4 py-2 border h-10 bg-green-500 rounded-lg text-white hover:bg-green-600 active:bg-green-700'
+            className='px-4 py-2 border h-10 bg-green-500 rounded-lg text-white hover:bg-violet-600 active:bg-green-700'
           >
             To lowercase
           </button>
+          <button  type="submit" onClick={speak}  className='px-4 py-2 border h-10 bg-green-500 rounded-lg text-white hover:bg-violet-600 active:bg-green-700'>Speak</button>
+
+          <button  type="submit" onClick={clear}  className='px-4 py-2 border h-10 bg-green-500 rounded-lg text-white hover:bg-violet-600 active:bg-green-700'>Clear</button>
         </div>
       </div>
       <div className='container mx-auto my-8 p-4 bg-white border border-gray-300 rounded-lg shadow-md'>
         <h1 className="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">
           Preview
         </h1>
-        <p className="text-lg mb-4">
+        <p className="text-lg mb-4 w-full break-words whitespace-pre-wrap">
           {text}
         </p>
         <h2 className="text-md font-medium mb-2">
-          Your text contains {text.length} characters / {text.split(" ").filter(Boolean).length} words
+          Your text contains {text.length} characters / {text.split(" ").length -1} words
         </h2>
         <h2 className="text-md font-medium">
           {0.008 * text.split(" ").filter(Boolean).length} Minutes Average time to read the above text
