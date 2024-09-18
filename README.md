@@ -17,6 +17,7 @@ As I continue learning React, I will be building a range of small applications, 
 - React Router
 - Context API and state management
 
+Every project's live link will be added to their own readme file after deployment.
 
 1. Clone the repository:
 
