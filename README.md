@@ -19,6 +19,8 @@ As I continue learning React, I will be building a range of small applications, 
 
 Every project's live link will be added to their own readme file after deployment.
 
+lorem generator link : https://react-practice-projects-3qm2.vercel.app/
+
 1. Clone the repository:
 
    ```bash
