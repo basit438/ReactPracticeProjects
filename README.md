@@ -21,6 +21,10 @@ Every project's live link will be added to their own readme file after deploymen
 
 lorem generator link : https://react-practice-projects-3qm2.vercel.app/
 
+GroceryBud link : https://react-practice-projects-jbs2.vercel.app/
+
+Education Planner Link : https://react-practice-projects-z5rq.vercel.app/
+
 1. Clone the repository:
 
    ```bash
