@@ -27,6 +27,8 @@ Education Planner Link : https://react-practice-projects-z5rq.vercel.app/
 
 reactBank link : https://react-practice-projects-hhcg.vercel.app/
 
+Text Translation-app : https://react-practice-projects-r2lv.vercel.app/
+
 1. Clone the repository:
 
    ```bash
