@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'; // Importing axios
-import './Image.css';
+import './image.css';
 
 const clientId = 'f-XPPJVcRt9M_IIz0hl1LJHigj1qzqUoJZKhEAn30gM';
 
@@ -10,7 +10,7 @@ function Image() {
 
     async function fetchData(query) {
         if (query === '') {
-            alert('Bro For Image You have to Add Some Text 😁 ');
+            alert('For Images You have to Add Some Text 😁 ');
             return;
         }
         
