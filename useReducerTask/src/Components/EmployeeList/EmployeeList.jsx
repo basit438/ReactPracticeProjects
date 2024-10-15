@@ -1,3 +1,4 @@
+import { data } from 'autoprefixer';
 import React from 'react';
 
 function EmployeeList(props) {
@@ -10,7 +11,7 @@ function EmployeeList(props) {
             <h3 className="text-lg font-medium text-gray-800">{`${employee.first_name} ${employee.last_name}`}</h3>
             <p className="text-gray-600 truncate">{employee.email}</p>
           </div>
-          <button onClick={() => props.dispath("Add_to_team_list")} className="text-blue-500 font-bold border border-blue-500 px-2 py-1 rounded-md ml-auto">+</button>
+          <button onClick={() => props.dispatch({action :"Add_to_team_list" , payload : employee})} className="text-blue-500 font-bold border border-blue-500 px-2 py-1 rounded-md ml-auto">+</button>
         </div>
       ))}
     </div>
