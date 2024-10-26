@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './App.css';
 
 // Creating a simple counter application using class-based components
 class CounterApp extends Component {
@@ -57,7 +57,7 @@ class CounterApp extends Component {
     console.log("Rendering component with state:", this.state); // Log state each render
     return (
       <div className="app-container">
-        <h1>React Counter</h1>
+        <h1>React Counter App with Class-based Components</h1>
         <div className="counter-display">
           <h2>Count: {this.state.count}</h2>
         </div>
